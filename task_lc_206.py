@@ -10,9 +10,8 @@ class Solution:
         if not head:
             return None
 
-        cur = head.next
-        prev = head
-        prev.next = None
+        cur = head
+        prev = None
 
         while cur:
             temp = cur.next
