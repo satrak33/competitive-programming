@@ -11,13 +11,7 @@ void solve() {
     int x, y, n;
     cin >> x >> y >> n;
 
-    if (n % x == y) {
-      cout << n << "\n";
-    } else if (y < n % x) {
-      cout << n - (n % x - y) << "\n";
-    } else {
-      cout << n - n % x - x + y << "\n";
-    }
+    cout << ((n - y) / x) * x + y << "\n";
   }
 }
 
