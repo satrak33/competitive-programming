@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <cstdio>
 #include <iostream>
 #include <vector>
 
@@ -8,21 +9,18 @@ using ll = long long;
 class Solution {
 public:
   int removeDuplicates(vector<int> &nums) {
-    int slow = 2;
-    int fast = 2;
-    int cnt = min(static_cast<int>(nums.size()), 2);
+    if (nums.size() <= 2)
+      return nums.size();
 
-    while (fast < nums.size()) {
-      if (nums[fast] == nums[slow - 2]) {
-        fast++;
-      } else {
+    int slow = 2;
+
+    for (int fast = 2; fast < nums.size(); ++fast) {
+      if (nums[fast] != nums[slow - 2]) {
         nums[slow] = nums[fast];
         slow++;
-        fast++;
-        cnt++;
       }
     }
 
-    return cnt;
+    return slow;
   }
 };
