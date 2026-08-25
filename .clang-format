@@ -1,0 +1,22 @@
+BasedOnStyle: LLVM
+
+IndentWidth: 2
+ContinuationIndentWidth: 2
+ColumnLimit: 80
+
+BreakBeforeBraces: Attach
+
+BinPackParameters: true
+BinPackArguments: true
+
+BreakAfterOpenBracketFunction: true
+BreakBeforeCloseBracketFunction: true
+
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLoopsOnASingleLine: true
+
+AccessModifierOffset: -2
+NamespaceIndentation: None
+
+SortIncludes: true
