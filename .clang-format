@@ -9,6 +9,9 @@ BreakBeforeBraces: Attach
 BinPackParameters: true
 BinPackArguments: true
 
+BreakAfterReturnType: ExceptShortType
+PenaltyReturnTypeOnItsOwnLine: 1000000
+
 BreakAfterOpenBracketFunction: true
 BreakBeforeCloseBracketFunction: true
 
